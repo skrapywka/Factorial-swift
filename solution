@@ -1,0 +1,9 @@
+func factorial(_ n: Int) -> UInt64 {
+    var factorial: UInt64 = 1
+    var number = n
+    while number > 0 {
+        factorial *= UInt64(number)
+        number = number - 1
+    }
+    return factorial
+}
